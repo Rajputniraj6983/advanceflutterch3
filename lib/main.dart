@@ -1,5 +1,7 @@
 import 'package:advanceflutterch3/Task_1/views/Homepage.dart';
+import 'package:advanceflutterch3/Task_2/Provider/Goggle_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main()
 {
@@ -10,9 +12,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Networkscreen(),
+    return MultiProvider(providers: [
+      ChangeNotifierProvider(create: (context) => googleprovider())
+    ],
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Networkscreen(),
+      ),
     );
   }
 }
