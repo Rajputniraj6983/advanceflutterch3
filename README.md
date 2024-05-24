@@ -47,3 +47,65 @@ if (connectivityResult.contains(ConnectivityResult.mobile)) {
     <a href="https://github.com/Rajputniraj6983/advanceflutterch3/tree/master/lib/Task_1/views">👉 📚 Go to dart file 📚 👈</a>
       Adv_Flutter_Ch1
   </div></p>
+
+
+  ## 3.2 Chrome : flutter_inappwebview Package 
+
+# flutter_inappwebview
+
+`flutter_inappwebview` is a Flutter package that allows you to embed WebView widgets into your Flutter application with ease. It provides a comprehensive set of features and functionalities, enabling you to control web content dynamically.
+
+## Installation
+
+Run `flutter pub get` to install the package.
+
+## Usage
+
+Here's a simple example demonstrating how to use `InAppWebView` and control it using its methods: `goBack`, `goForward`, `reload`, and `loadUrl`.
+
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Connectivity Network'),
+        ),
+        body:InAppWebView(
+        initialUrlRequest: URLRequest(url: Uri.parse("https://flutter.dev")),
+        onWebViewCreated: (controller) {
+          _webViewController = controller;
+        },
+      ),
+    );
+  }
+}
+```
+
+### Screenshots
+
+<div align="center">
+  <img src= "https://github.com/Rajputniraj6983/advanceflutterch3/assets/143181391/83317092-c0ce-4793-93c6-4c250ab87264" width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src= "https://github.com/Rajputniraj6983/advanceflutterch3/assets/143181391/5d130c75-a40b-4b51-b5e8-f56c96cb8675" width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+<div align="center">
+  <a href='https://github.com/Rajputniraj6983/advanceflutterch3/tree/master/lib/Task_2'>👉 📱 Go to dart file 📱 👈</a>
+</div>
+
+ <div align="center">
+    <video src="" width="400">
+  </div></p>
+
+### Video 
+
+
