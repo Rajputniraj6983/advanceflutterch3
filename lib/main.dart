@@ -1,5 +1,6 @@
 import 'package:advanceflutterch3/Task_1/views/Homepage.dart';
 import 'package:advanceflutterch3/Task_2/Provider/Goggle_provider.dart';
+import 'package:advanceflutterch3/Task_2/View/Google_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     ],
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Networkscreen(),
+        home: Googlepage(),
       ),
     );
   }

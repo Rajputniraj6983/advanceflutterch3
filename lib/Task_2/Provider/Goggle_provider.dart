@@ -3,16 +3,17 @@ import 'package:flutter/cupertino.dart';
 class googleprovider extends ChangeNotifier
 {
   double progress = 0;
-  searchText = '';
+   String searchText = '';
 
-  void onchangeProgress(int progress){
+  void onchangeProgress(int progress) {
     this.progress = progress / 100;
     notifyListeners();
+  }
 
-    void search (String searchText){
-      this.progress = searchText;
+    void search(String searchText){
+      this.searchText = searchText;
       notifyListeners();
     }
-  }
+
 
 }
